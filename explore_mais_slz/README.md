@@ -78,7 +78,7 @@ O banco padrão é `backend/explore_slz.db`. Para usar outro arquivo, defina `EX
 
 Os 14 registros iniciais foram preservados. A expansão documenta 69 referências reais, totalizando 76 registros após considerar os nomes já existentes. Dados incompletos continuam em revisão. O gerador usa regras locais, sem IA, cotações em tempo real ou cálculo de trajetos. Confirme horários, preços e acessibilidade antes de visitar. Fontes e mapas externos dependem de internet.
 
-O servidor iniciado diretamente é de desenvolvimento, com debug. Para a arquitetura preparada de publicação com GitHub, Vercel e Flask em disco persistente, siga [DEPLOY_VERCEL.md](DEPLOY_VERCEL.md). A publicação depende de configurar o servidor de origem e transferir os dados com autorização.
+O servidor iniciado diretamente é de desenvolvimento, com debug. Para publicar em **um único serviço com SQLite e imagens persistentes**, siga [DEPLOY.md](DEPLOY.md). O arquivo `render.yaml` na raiz configura o Render automaticamente. A Vercel é opcional; não é necessária nessa arquitetura.
 
 A análise completa está em [ANALISE_PROJETO.md](ANALISE_PROJETO.md).
 ## Expansão 2 — cultura, acessibilidade e encontros

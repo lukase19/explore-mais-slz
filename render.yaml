@@ -1,0 +1,25 @@
+# Um serviço: Flask + frontend + SQLite/imagens no mesmo disco persistente.
+services:
+  - type: web
+    name: explore-mais-slz
+    runtime: python
+    plan: 0.5c-512mb
+    rootDir: explore_mais_slz
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m backend.hosting
+    healthCheckPath: /_hosting/health
+    disk:
+      name: explore-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.12
+      - key: EXPLORE_DATABASE_PATH
+        value: /var/data/explore_slz.db
+      - key: EXPLORE_HTTPS
+        value: "1"
+      - key: EXPLORE_SECRET_KEY
+        generateValue: true
+      - key: EXPLORE_IMPORT_TOKEN
+        generateValue: true

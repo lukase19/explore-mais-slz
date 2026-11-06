@@ -47,12 +47,21 @@ class DeploymentConfigTest(unittest.TestCase):
             root = Path(directory)
             (root / 'vercel.json').write_text(json.dumps(config), encoding='utf-8')
             with self.assertRaises(ValueError):
-                prepare(root)
-            self.assertFalse((root / config['outputDirectory']).exists())
-            config['rewrites'][0]['destination'] = 'https://backend.example.org/:path*'
-            (root / 'vercel.json').write_text(json.dumps(config), encoding='utf-8')
-            prepare(root)
-            self.assertEqual([p.name for p in (root / config['outputDirectory']).iterdir()], ['proxy-ready.txt'])
+                prepare(root, environ={})
+            self.assertFalse((root / '.vercel/output').exists())
+            prepare(root, environ={'EXPLORE_BACKEND_URL': 'https://backend.example.org'})
+            output = json.loads((root / '.vercel/output/config.json').read_text(encoding='utf-8'))
+            self.assertEqual(output['version'], 3)
+            self.assertEqual(output['routes'][0]['dest'], 'https://backend.example.org/$1')
+            self.assertEqual(list((root / '.vercel/output/static').iterdir()), [])
+
+    def test_build_rejects_loop_to_own_vercel_domain(self):
+        with tempfile.TemporaryDirectory(prefix='explore-build-') as directory:
+            root = Path(directory)
+            (root / 'vercel.json').write_text('{}', encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'loop'):
+                prepare(root, environ={'EXPLORE_BACKEND_URL': 'https://explore.vercel.app',
+                                       'VERCEL_PROJECT_PRODUCTION_URL': 'explore.vercel.app'})
 
     def test_proxy_origin_validation(self):
         for destination in ('http://backend.example.org/:path*',
