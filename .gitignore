@@ -1,0 +1,34 @@
+# Regras na raiz do repositório (o aplicativo está em explore_mais_slz/).
+.env
+.env.*
+!.env.example
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.sql
+*.dump
+*.pem
+*.key
+*.p12
+*.pfx
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.artifacts/
+.vercel/
+.vercel-static/
+backups/
+uploads/
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+# Saída de comandos Git salva acidentalmente; preservada para inspeção.
+/ntent .explore_mais_slzANALISE_PROJETO.md -Raw
+# Pacote de apresentação local, sem função no aplicativo.
+/explore_mais_slz/documentacao_seminario.zip

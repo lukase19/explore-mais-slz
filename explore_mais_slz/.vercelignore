@@ -1,0 +1,8 @@
+# A Vercel só recebe a configuração do proxy e seu verificador.
+# O frontend e o Flask são servidos pelo servidor com disco persistente.
+*
+!vercel.json
+!.vercelignore
+!scripts/
+scripts/*
+!scripts/prepare_vercel.py

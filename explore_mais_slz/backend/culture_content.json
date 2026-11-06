@@ -1,0 +1,133 @@
+[
+  {
+    "id": "bumba",
+    "icon": "🥁",
+    "title": "Bumba Meu Boi e seus sotaques",
+    "kind": "Informação cultural",
+    "text": "Matraca, zabumba, baixada, orquestra e costa de mão estão entre as formas de celebrar o boi. Sotaque envolve modos de tocar, cantar, dançar e vestir. Não se resume a um ritmo único.",
+    "source_url": "https://antigo.cnfcp.gov.br/interna.php?ID_Materia=76",
+    "query": "Bumba",
+    "theme": "popular",
+    "destinations": [
+      "Casa do Maranhão",
+      "Bumba Meu Boi da Floresta"
+    ],
+    "verified_at": "2026-11-06"
+  },
+  {
+    "id": "tambor",
+    "icon": "◉",
+    "title": "Tambor de Crioula",
+    "kind": "Patrimônio imaterial",
+    "text": "Roda, canto e tambores são caminhos de expressão e memória afro-maranhense. A experiência pertence às comunidades que a mantêm; apresentações e visitas devem ser combinadas com seus responsáveis.",
+    "source_url": "https://www.gov.br/iphan/pt-br/superintendencias/maranhao/patrimonio-imaterial",
+    "query": "Casa do Maranhão",
+    "theme": "popular",
+    "destinations": [
+      "Centro de Cultura e Turismo do Quilombo Urbano"
+    ],
+    "verified_at": "2026-11-06"
+  },
+  {
+    "id": "reggae",
+    "icon": "♫",
+    "title": "Reggae maranhense",
+    "kind": "Memória musical",
+    "text": "O Museu do Reggae oferece um ponto de partida para explorar a relação da cidade com o gênero. Escutar, conhecer acervos e conversar com quem produz são maneiras de se aproximar dessa história.",
+    "source_url": "https://turismosaoluis.com.br/o-que-fazer/museus/",
+    "query": "Museu do Reggae",
+    "theme": "reggae",
+    "destinations": [
+      "Museu do Reggae"
+    ],
+    "verified_at": "2026-11-06"
+  },
+  {
+    "id": "cacuria",
+    "icon": "✦",
+    "title": "Cacuriá e cultura popular",
+    "kind": "Informação cultural",
+    "text": "O cacuriá compõe o universo das danças populares maranhenses. Conheça os grupos e suas narrativas com respeito: a apresentação turística não substitui a história de quem brinca.",
+    "source_url": "https://www.gov.br/iphan/pt-br/assuntos/noticias/boi-de-costa-de-mao-e-tema-de-material-educativo-lancado-pelo-iphan/LivrodeEstrias_Digital.pdf",
+    "query": "Cultura",
+    "theme": "popular",
+    "destinations": [],
+    "verified_at": "2026-11-06"
+  },
+  {
+    "id": "azulejos",
+    "icon": "▧",
+    "title": "Azulejos e Centro Histórico",
+    "kind": "Patrimônio e memória",
+    "text": "As fachadas são uma entrada para conversar sobre arquitetura, trabalho e transformações urbanas. O conjunto histórico é reconhecido como Patrimônio Mundial desde 1997. A cidade continua sendo lugar de vida e moradia.",
+    "source_url": "https://www.gov.br/iphan/pt-br/superintendencias/maranhao",
+    "query": "Rua Portugal",
+    "theme": "historia",
+    "destinations": [
+      "Centro Histórico",
+      "Rua Portugal",
+      "Museu de Artes Visuais"
+    ],
+    "verified_at": "2026-11-06"
+  },
+  {
+    "id": "lendas",
+    "icon": "☾",
+    "title": "Lendas que a cidade conta",
+    "kind": "Tradição oral, não fato histórico",
+    "text": "Narrativas sobre Ana Jansen e a serpente de São Luís fazem parte do imaginário local. São lendas: valem como expressão cultural, sem serem apresentadas como acontecimentos comprovados.",
+    "source_url": "https://turismosaoluis.com.br/a-cidade/lendas-de-sao-luis/",
+    "query": "Centro Histórico",
+    "theme": "historia",
+    "destinations": [
+      "Centro Histórico"
+    ],
+    "verified_at": "2026-11-06"
+  },
+  {
+    "id": "artesanato",
+    "icon": "🧵",
+    "title": "Artesanato e artistas do fazer",
+    "kind": "Saberes e memória",
+    "text": "A Casa de Nhozinho homenageia Antônio Bruno Nogueira e aproxima visitantes de técnicas e objetos da cultura popular. Em Raposa, a renda de bilro convida a valorizar o trabalho das rendeiras.",
+    "source_url": "https://turismo.ma.gov.br/noticias/rendeiras-da-raposa-a-arte-que-virou-patrimonio-e-orgulho-do-maranhao",
+    "query": "Corredor das Rendas",
+    "theme": "cultura",
+    "destinations": [
+      "Casa de Nhozinho",
+      "Corredor das Rendas"
+    ],
+    "verified_at": "2026-11-06"
+  },
+  {
+    "id": "gastronomia",
+    "icon": "🍲",
+    "title": "A cultura também está à mesa",
+    "kind": "Gastronomia regional",
+    "text": "O Museu da Gastronomia é um caminho para pesquisar os saberes da cozinha maranhense. Esta seleção editorial convida a descobrir sabores; não anuncia cardápios, preços ou parceiros comerciais.",
+    "source_url": "https://turismosaoluis.com.br/o-que-fazer/museus/",
+    "query": "Museu da Gastronomia Maranhense",
+    "theme": "sabores",
+    "destinations": [
+      "Museu da Gastronomia Maranhense",
+      "Feirinha São Luís"
+    ],
+    "verified_at": "2026-11-06"
+  },
+  {
+    "id": "quilombo",
+    "icon": "✳",
+    "title": "Quilombo Cultural",
+    "kind": "Experiência de base comunitária",
+    "text": "Liberdade, Camboa, Fé em Deus e Diamante integram a referência territorial do roteiro municipal. Procure o Centro de Cultura e Turismo do Quilombo Urbano para confirmar dinâmica, participação e consentimento das comunidades.",
+    "source_url": "https://turismosaoluis.com.br/experiencias/roteiro-quilombo-cultural-de-sao-luis/",
+    "query": "Quilombo",
+    "theme": "quilombo",
+    "destinations": [
+      "Centro de Cultura e Turismo do Quilombo Urbano",
+      "Mercado Municipal da Liberdade",
+      "Bumba Meu Boi da Floresta"
+    ],
+    "verified_at": "2026-11-06"
+  }
+]
